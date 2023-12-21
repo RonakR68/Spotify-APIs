@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Spotify API</title>
+</head>
+<body>
+    <header>
+        <h1>Spotify API</h1>
+    </header>
+    <main>
+        <div class="select-api">
+            <label for="api-select">Select an Option:</label>
+            <select id="api-select" onchange="handleApiChange()">
+                <option value="" disabled selected>Select an option</option>
+                <option value="new-releases">New Releases</option>
+                <option value="featured-playlists">Featured Playlists</option>
+            </select>
+        </div>
+        <div id="optional-params">
+            
+        </div>
+        <div class="result-container">
+            <div id="result"></div>
+        </div>
+    </main>
+    <script src="../js/script.js"></script>
+</body>
+</html>
